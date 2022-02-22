@@ -9,127 +9,70 @@
     body{
       margin:0;
       font-family: Comic Sans MS, Comic Sans, cursive;
-      overflow-x: hidden;
     }
 
-    /* .header-part{
-      height: 200px;
-      background-image: url('../bg-pic.jpeg');
-      background-repeat: no-repeat;
-      background-size: auto;
-      color: white;
-      width:100%;
-      padding-top: 50px;
-      text-align: center;
+    .header-title{
+        height: 200px;
+        width: 100%;
+        background-image: url('../bg-pic.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding-top: 50px;
+        text-align: center;
     }
 
     h1{
-      margin: 0;
-      font-size: 60px;
+        margin: 0;
+        font-size: 60px;
+    }
+
+    h2{
+        color: rgb(90, 90, 90);
+        font-weight: bold;
+        top: 350px;
+        font-size:35px;
+        margin-bottom: 0px;
     }
 
     h3{
-      margin-top: 10px;
-    } */
-
-    @media (min-width: 768px){
-      .header-part{
-        height: 200px;
-        background-image: url('../bg-pic.jpeg');
-        background-repeat: no-repeat;
-        background-size: auto;
-        color: white;
-        width:100%;
-        padding-top: 50px;
-        text-align: center;
-      }
-
-      h1{
-        margin: 0;
-        font-size: 60px;
-      }
-
-      h3{
         margin-top: 10px;
-      }
-    }
-
-    @media (max-width: 768px){
-      .header-part{
-        height: 200px;
-        background-image: url('../bg-pic.jpeg');
-        background-repeat: no-repeat;
-        background-size: auto;
-        color: white;
-        width:100%;
-        padding-top: 50px;
-        text-align: center;
-      }
-
-      h1{
-        margin: 0;
-        font-size: 30px;
-      }
-
-      h3{
-        margin-top: 10px;
-      }
-    }
-
-    #header-intro{
-      font-size: 20px;
     }
 
     #navbar{
-      /* margin-top: 70px; */
-      border: 1px rgb(128, 128, 128, 0.5) solid;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 60px;
-      position: sticky;
-      /* width: 100%; */
-      top:0;
-      height: 70px;
-      background-color: white;
+        border: 1px rgb(128, 128, 128, 0.5) solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        position: sticky;
+        top:0;
+        height: 70px;
+        background-color: white;
     }
 
     .flex-nav-item:hover{
-      text-decoration: underline;     
+        text-decoration: underline;     
     }
 
     .flex-nav-item{
-      font-size: 15px;
-      color: gray;
-      text-decoration: none;
+        font-size: 15px;
+        color: gray;
+        text-decoration: none;
     }
 
-    .title{
-      padding-top: 50px;
-      color: rgb(90, 90, 90);
-      font-weight: bold;
-      /* margin-left: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
-      top: 350px;
-      font-size:30px;
-      padding-bottom: 15px;
+    .flex-nav-item:nth-child(3){/*!!!!!*/
+        text-decoration: underline;
     }
-    
-    .contact-info{
-      color: rgb(90, 90, 90); 
-      font-size: 15px;
-      /* margin-left: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
+
+    .content{
+        margin-left: 15%;
+        margin-right: 15%;
+        color: rgb(90, 90, 90); 
     }
 
     .table{
-      color: rgb(90, 90, 90); 
       font-size: 20px;
-      /* margin-left: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
       text-align: left;
     }
 
@@ -141,56 +84,84 @@
       padding-top:5px;
     }
 
+    @media(max-width: 768px){
+      .flex-container{
+          flex-direction: column;
+      }
+
+      .header-title{
+          height: 150px;
+          background-size: cover;
+      }
+
+      #navbar{
+          gap: 40px;
+          height: 50px;
+      }
+
+      .flex-nav-item{
+          font-size: 10px;
+      }
+
+      h1{
+          font-size: 30px;
+      }
+
+      h2{
+          font-weight: bold;
+          font-size:25px;
+      }
+
+      h3{
+          font-size: 15px;
+      }
+
+      .table{
+        font-size: 11px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="header-part">
-    <h1>Ying Zeng</h1>
-    <h3>
-        This is the personal website of Ying Zeng
-    </h3>
-  </div>
+  <header>
+    <div class="header-title">
+        <h1>Ying Zeng</h1>
+        <h3>
+            This is the personal website of Ying Zeng
+        </h3>
+    </div>
+  </header>
 
-  <div id="navbar">
-    <a class="flex-nav-item" href="../index.html">HOME</a>
-    <a class="flex-nav-item" href="../Projects/index.html">PROJECTS</a>
-    <a class="flex-nav-item" style="text-decoration: underline" href="index.html">CONTACT</a>
-    <a class="flex-nav-item" href="../Other/index.html">OTHER</a>
-  </div>
+  <nav id="navbar">
+      <a class="flex-nav-item" href="../index.html">HOME</a><!--要改-->
+      <a class="flex-nav-item" href="../Projects/index.html">PROJECTS</a>
+      <a class="flex-nav-item" href="index.html">CONTACT</a>
+      <a class="flex-nav-item" href="../Other/index.html">OTHER</a>
+  </nav>
 
-
-  <div class="title">Contact Info</div>
-  <!-- <div class="contact-info">
-    Email: zeng.ying@northeastern.edu
+  <div class="content">
+    <h2>Contact Info</h2>
+    <table class="table">
+      <tr>
+        <th class="table-header">Email:</th>
+        <td class="table-data">zeng.ying@northeastern.edu</td>
+      </tr>
+      <tr>
+        <th class="table-header">LinkedIn:</th>
+        <td class="table-data">https://www.linkedin.com/in/yz44/</td>
+      </tr>
+      <tr>
+        <th class="table-header">Github:</th>
+        <td class="table-data">https://github.com/TeamoYOOOO</td>
+      </tr>
+      <tr>
+        <th class="table-header">Facebook:</th>
+        <td class="table-data">https://www.facebook.com/ying.zeng.965/</td>
+      </tr>
+    </table>
   </div>
-  <div class="contact-info">
-    LinkedIn: https://www.linkedin.com/in/yz44/
-  </div>
-  <div class="contact-info">
-    Github: https://github.com/TeamoYOOOO
-  </div>
-  <div class="contact-info">
-    Facebook: https://www.facebook.com/ying.zeng.965/
-  </div> -->
-  <table class="table">
-    <tr>
-      <th class="table-header">Email:</th>
-      <td class="table-data">zeng.ying@northeastern.edu</td>
-    </tr>
-    <tr>
-      <th class="table-header">LinkedIn:</th>
-      <td class="table-data">https://www.linkedin.com/in/yz44/</td>
-    </tr>
-    <tr>
-      <th class="table-header">Github:</th>
-      <td class="table-data">https://github.com/TeamoYOOOO</td>
-    </tr>
-    <tr>
-      <th class="table-header">Facebook:</th>
-      <td class="table-data">https://www.facebook.com/ying.zeng.965/</td>
-    </tr>
-  </table>
 
 </body>
 </html>

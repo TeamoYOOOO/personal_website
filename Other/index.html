@@ -10,19 +10,16 @@
       margin:0;
       font-family: Comic Sans MS, Comic Sans, cursive;
     }
-    
-    .header-part{
-      height: 200px;
-      width: 100%;
-      /* position: fixed; */
-      background-image: url('../bg-pic.jpeg');
-      background-repeat: no-repeat;
-      background-size: auto;
-      color: white;
-      width:100%;
-      /* font-size: 60px; */
-      padding-top: 50px;
-      text-align: center;
+
+    .header-title{
+        height: 200px;
+        width: 100%;
+        background-image: url('../bg-pic.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding-top: 50px;
+        text-align: center;
     }
 
     h1{
@@ -30,116 +27,80 @@
         font-size: 60px;
     }
 
+    h2{
+        color: rgb(90, 90, 90);
+        font-weight: bold;
+        top: 350px;
+        font-size:35px;
+        margin-bottom: 0px;
+    }
+
     h3{
         margin-top: 10px;
     }
 
-    #header-intro{
-        font-size: 20px;
-    }
-
     #navbar{
-      /* margin-top: 70px; */
-      border: 1px rgb(128, 128, 128, 0.5) solid;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 60px;
-      position: sticky;
-      width: 100%;
-      top:0;
-      height: 70px;
-      background-color: white;
+        border: 1px rgb(128, 128, 128, 0.5) solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        position: sticky;
+        top:0;
+        height: 70px;
+        background-color: white;
     }
 
     .flex-nav-item:hover{
-      text-decoration: underline;     
+        text-decoration: underline;     
     }
 
     .flex-nav-item{
-      font-size: 15px;
-      color: gray;
-      text-decoration: none;
+        font-size: 15px;
+        color: gray;
+        text-decoration: none;
+    }
+
+    .flex-nav-item:nth-child(4){/*!!!!!*/
+        text-decoration: underline;
+    }
+
+    .content{
+        margin-left: 15%;
+        margin-right: 15%;
+        color: rgb(90, 90, 90); 
     }
 
     p{
       margin-top:0px;
       margin-bottom: 0px;
-      color: rgb(90, 90, 90); 
-      /* margin-left:200px;
-      margin-right:200px; */
-      margin-left: 15%;
-      margin-right: 15%;
     }
 
     #intro{
-      margin-top:20px;
-      /* margin-left:200px;
-      margin-right:200px; */
-      margin-left: 15%;
-      margin-right: 15%;
-      color: rgb(90, 90, 90); 
+      margin-top:20px; 
       font-size: 20px;
     }
 
     .title{
       padding-top: 40px;
-      color: rgb(90, 90, 90);
       font-weight: bold;
-      /* margin-left: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
       top: 350px;
       font-size:20px;
       padding-bottom: 10px;
     }
-    
-    .contact-info{
-      color: rgb(90, 90, 90); 
-      font-size: 15px;
-      /* margin-left: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
-    }
-
-    .table{
-      color: rgb(90, 90, 90); 
-      font-size: 20px;
-      /* margin-left: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
-      text-align: left;
-    }
-
-    .table-header{
-      padding-top:5px;
-    }
-
-    .table-data{
-      padding-top:5px;
-    }
-
-    /* ------------------------------------ */
 
     .grid-container {
       display: grid;
-      /* height: 600px; */
       height: 100%;
       grid-template-areas: 
           "pic-one pic-two"
           "pic-three pic-four"
       ;
-      /* margin-left:200px;
-      margin-right: 200px; */
-      margin-left: 15%;
-      margin-right: 15%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-gap: 20px;
       margin-bottom: 20px;
     }
-
-
 
     .pic-one {
       border: 1px rgb(230, 227, 227) solid;
@@ -177,122 +138,172 @@
       align-items: center ;
     }
 
-
     .flex-box{
       display: flex;
       font-size: 30px;
     }
-
-    .square {
-      width: 60px;
-      height: 60px;
-      background-color: green;
-      -webkit-transition: 0.5s;
-      /* align-content: center; */
-      /* justify-content: space-around; */
+    
+    .pic{
+      max-width: 80%; 
     }
 
-    .square:hover{
-      width: 120px;
-      height: 120px;
-      background-color: orange;
+    .pic:hover{
+      max-width: 90%;
+      -webkit-transition: 0.5s;
+    }
+
+    @media(max-width: 768px){
+      .flex-container{
+        flex-direction: column;
+      }
+
+      .header-title{
+        height: 150px;
+        background-size: cover;
+      }
+
+      #navbar{
+        gap: 40px;
+        height: 50px;
+      }
+
+      .flex-nav-item{
+        font-size: 10px;
+      }
+
+      h1{
+        font-size: 30px;
+      }
+
+      h2{
+        font-weight: bold;
+        font-size:25px;
+      }
+
+      h3{
+        font-size: 15px;
+      }
+
+      .grid-container {
+        height: 200px;
+        grid-gap: 5px;
+        margin-bottom: 20px;
+      }
+
+      #intro{
+        font-size: 15px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="header-part">
-    <h1>Ying Zeng</h1>
-    <h3>
-        This is the personal website of Ying Zeng
-    </h3>
+  <header>
+    <div class="header-title">
+        <h1>Ying Zeng</h1>
+        <h3>
+            This is the personal website of Ying Zeng
+        </h3>
+    </div>
+  </header>
+
+  <nav id="navbar">
+      <a class="flex-nav-item" href="../index.html">HOME</a>
+      <a class="flex-nav-item" href="../Projects/index.html">PROJECTS</a>
+      <a class="flex-nav-item" href="../Contact/index.html">CONTACT</a>
+      <a class="flex-nav-item" href="index.html">OTHER</a>
+  </nav>
+
+  <div class="content">
+    <div id="intro">I love animals. For this page, I would like to share some pictures of me and myfriend's cutty pets.</div>
+    <div class="title">My dog - Bobo</div>
+    <p>
+      I have a dog named Bobo. He is a 4 year old <span style="font-weight: bold;">Boston Terrier</span>. He is shy but always enegetic.
+    </p>
+    <div class="grid-container">
+      <div class="pic-one">
+        <img class="pic" src="bobo1.jpg" alt="picture of bobo">
+      </div>
+      <div class="pic-two">
+        <img class="pic" src="bobo2.jpg" alt="picture of bobo">
+      </div>
+      <div class="pic-three">
+        <img class="pic" src="bobo3.jpg" alt="picture of bobo">
+      </div>
+      <div class="pic-four">
+        <img class="pic" src="bobo4.jpg" alt="picture of bobo">
+      </div>
+    </div>
+
+    <div class="title">My friend's cat - Toby</div>
+    <p>My friend has a cat named Toby. He is a 2 year old <span style="font-weight: bold;">Ragdoll</span>. He is super naughty.</p>
+    <div class="grid-container">
+      <div class="pic-one">
+        <img class="pic" src="toby1.jpeg" alt="picture of toby">
+      </div>
+      <div class="pic-two">
+        <img class="pic" src="toby2.jpeg" alt="picture of toby">
+      </div>
+      <div class="pic-three">
+        <img class="pic" src="toby3.jpeg" alt="picture of toby">
+      </div>
+      <div class="pic-four">
+        <img class="pic" src="toby4.jpeg" alt="picture of toby">
+      </div>
+    </div>
+
+    <div class="title"> Bobo & Toby & Huahua</div>
+    <p>Bobo and Toby used to live together. During that time, one of my friend had her cat stayed at my home for few months because she was not able to go back to US due to the flight restriction by covid. I have plenty of photoes taken during that time.</p>
+    <div class="grid-container">
+      <div class="pic-one">
+        <img class="pic" src="bth1.jpg" alt="picture of Toby, Bobo and Huahua">
+      </div>
+      <div class="pic-two">
+        <img class="pic" src="bth2.jpg" alt="picture of Toby, Bobo and Huahua">
+      </div>
+      <div class="pic-three">
+        <img class="pic" src="bth3.jpg" alt="picture of Toby, Bobo and Huahua">
+      </div>
+      <div class="pic-four">
+        <img class="pic" src="bth4.jpg" alt="picture of Toby, Bobo and Huahua">
+      </div>
+    </div>
+
+    <div class="title">My friend's cat - Tutu</div>
+    <p>This is Tutu. She is a 3 year old <span style="font-weight: bold;">Siamese cat</span>. She lives in China and I have not meet her once yet. Really wish the pandemic is over so I can go back to China to see her. </p>
+    <div class="grid-container">
+      <div class="pic-one">
+        <img class="pic" src="tutu1.jpeg" alt="picture of tutu">
+      </div>
+      <div class="pic-two">
+        <img class="pic" src="tutu4.jpeg" alt="picture of tutu">
+      </div>
+      <div class="pic-three">
+        <img class="pic" src="tutu3.jpeg" alt="picture of tutu"> 
+      </div>
+      <div class="pic-four">
+        <img class="pic" src="tutu2.jpeg" alt="picture of tutu">
+      </div>
+    </div>
+
+    <div class="title">My friend's cat - Coco & Gungun</div>
+    <p>This is Coco & Gungun. Both of them are <span style="font-weight: bold;">Domestic Short Hair</span>. They live together.</p>
+    <div class="grid-container">
+      <div class="pic-one">
+        <img class="pic" src="cogun1.jpg" alt="picture of Gungun">
+      </div>
+      <div class="pic-two">
+        <img class="pic" src="cogun3.jpg" alt="picture of Coco & Gungun">
+      </div>
+      <div class="pic-three">
+        <img class="pic" src="cogun2.jpg" alt="picture of Gungun">
+      </div>
+      <div class="pic-four">
+        <img class="pic" src="cogun4.jpg" alt="picture of Coco">
+      </div>
+    </div>
   </div>
 
-  <div id="navbar">
-    <a class="flex-nav-item" href="../index.html">HOME</a>
-    <a class="flex-nav-item" href="../Projects/index.html">PROJECTS</a>
-    <a class="flex-nav-item" href="../Contact/index.html">CONTACT</a>
-    <a class="flex-nav-item" style="text-decoration: underline" href="index.html">OTHER</a>
-  </div>
-
-
-  <div id="intro">I love animals. For this page, I would like to share some pictures of me and myfriend's cutty pets.</div>
-  <div class="title">My dog - Bobo</div>
-  <p>
-    I have a dog named Bobo. He is a 4 year old <span style="font-weight: bold;">Boston Terrier</span>. He is shy but always enegetic.
-  </p>
-  <div class="grid-container">
-    <div class="pic-one">
-      <img src="bobo1.jpg" alt="picture of bobo" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-two">
-      <img src="bobo2.jpg" alt="picture of bobo" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-three">
-      <img src="bobo3.jpg" alt="picture of bobo" style="float: right; max-width: 70%; padding-top: 10px;">
-        <!-- <div class="square" ></div> -->
-    </div>
-    <div class="pic-four">
-      <img src="bobo4.jpg" alt="picture of bobo" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-  </div>
-
-  <div class="title">My friend's cat - Toby</div>
-  <p>My friend has a cat named Toby. He is a 2 year old <span style="font-weight: bold;">Ragdoll</span>. He is super naughty.</p>
-  <div class="grid-container">
-    <div class="pic-one">
-      <img src="toby1.jpeg" alt="picture of toby" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-two">
-      <img src="toby2.jpeg" alt="picture of toby" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-three">
-      <img src="toby3.jpeg" alt="picture of toby" style="float: right; max-width: 70%; padding-top: 10px;">
-        <!-- <div class="square" ></div> -->
-    </div>
-    <div class="pic-four">
-      <img src="toby4.jpeg" alt="picture of toby" style="float: right; max-width: 70%; padding-top: 10px; ">
-    </div>
-  </div>
-
-  <div class="title"> Bobo & Toby & Huahua</div>
-  <p>Bobo and Toby used to live together. During that time, one of my friend had her cat stayed at my home for few months because she was not able to go back to US due to the flight restriction by covid. I have plenty of photoes taken during that time.</p>
-  <div class="grid-container">
-    <div class="pic-one">
-      <img src="bth1.jpg" alt="picture of Toby, Bobo and Huahua" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-two">
-      <img src="bth2.jpg" alt="picture of Toby, Bobo and Huahua" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-three">
-      <img src="bth3.jpg" alt="picture of Toby, Bobo and Huahua" style="float: right; max-width: 70%; padding-top: 10px;">
-        <!-- <div class="square" ></div> -->
-    </div>
-    <div class="pic-four">
-      <img src="bth4.jpg" alt="picture of Toby, Bobo and Huahua" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-  </div>
-
-  <div class="title">My friend's cat - Tutu</div>
-  <p>This is Tutu. She is a 3 year old <span style="font-weight: bold;">Siamese cat</span>. She lives in China and I have not meet her once yet. Really wish the pandemic is over so I can go back to China to see her. </p>
-  <div class="grid-container">
-    <div class="pic-one">
-      <img src="tutu1.jpeg" alt="picture of tutu" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-two">
-      <img src="tutu4.jpeg" alt="picture of tutu" style="float: right; max-width: 70%; padding-top: 10px;">
-    </div>
-    <div class="pic-three">
-      <img src="tutu3.jpeg" alt="picture of tutu" style="float: right; max-width: 70%; padding-top: 10px;">
-        <!-- <div class="square" ></div> -->
-    </div>
-    <div class="pic-four">
-      <img src="tutu2.jpeg" alt="picture of tutu" style="float: right; max-width: 70%; padding-top: 10px; ">
-    </div>
-  </div>
-  <div class="title">My friend's cat - Coco</div>
-
-  <div class="title">My friend's cat - Gungun</div>
 
 
 
