@@ -2,167 +2,166 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Mini Assignment 2</title>
-  <style>
-    body{
-      margin:0;
-      font-family: Comic Sans MS, Comic Sans, cursive;
-    }
-
-    .header-title{
-        height: 200px;
-        width: 100%;
-        background-image: url('../bg-pic.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    h1{
-        margin: 0;
-        font-size: 60px;
-    }
-
-    h2{
-        color: rgb(90, 90, 90);
-        font-weight: bold;
-        top: 350px;
-        font-size:35px;
-        margin-bottom: 0px;
-    }
-
-    h3{
-        margin-top: 10px;
-    }
-
-    #navbar{
-        border: 1px rgb(128, 128, 128, 0.5) solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
-        position: sticky;
-        top:0;
-        height: 70px;
-        background-color: white;
-    }
-
-    .flex-nav-item:hover{
-        text-decoration: underline;     
-    }
-
-    .flex-nav-item{
-        font-size: 15px;
-        color: rgb(90, 90, 90);
-        text-decoration: none;
-    }
-
-    .flex-nav-item:nth-child(2){
-        text-decoration: underline;
-    }
-
-    .content{
-        margin-left: 15%;
-        margin-right: 15%;
-        color: rgb(90, 90, 90);
-    }
-
-    .projects-container{
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
-    }
-
-    .title{
-        padding-top: 20px;
-        font-weight: bold;
-        top: 350px;
-        font-size:40px;
-    }
-
-    .subtitle{
-        text-align: left;
-        top: 400px;
-    }
-
-    .project-flex-item{
-        font-size: 17px;
-    }
-
-    .project-flex-item div:first-child{
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .project-flex-item div:nth-child(2){
-        font-size: 15px;
-        font-style:italic;
-    }
-
-    .project-flex-item ul {
-        padding-left: 30px;
-        margin-top: 5px;
-    }
-
-    @media(max-width: 768px){
-        .flex-container{
-            flex-direction: column;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Comic Sans MS, Comic Sans, cursive;
         }
 
-        .header-title{
-            height: 150px;
+        .header-title {
+            height: 200px;
+            width: 100%;
+            background-image: url('../bg-pic.jpeg');
+            background-repeat: no-repeat;
             background-size: cover;
+            color: white;
+            padding-top: 50px;
+            text-align: center;
         }
 
-        #navbar{
-            gap: 40px;
-            height: 50px;
+        h1 {
+            margin: 0;
+            font-size: 60px;
         }
 
-        .flex-nav-item{
-            font-size: 10px;
-        }
-
-        h1{
-            font-size: 30px;
-        }
-
-        h2{
+        h2 {
+            color: rgb(90, 90, 90);
             font-weight: bold;
-            font-size:25px;
+            top: 350px;
+            font-size: 35px;
+            margin-bottom: 0px;
         }
 
-        h3{
+        h3 {
+            margin-top: 10px;
+        }
+
+        #navbar {
+            border: 1px rgb(128, 128, 128, 0.5) solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            position: sticky;
+            top: 0;
+            height: 70px;
+            background-color: white;
+        }
+
+        .flex-nav-item:hover {
+            text-decoration: underline;
+        }
+
+        .flex-nav-item {
             font-size: 15px;
+            color: rgb(90, 90, 90);
+            text-decoration: none;
         }
 
-        .project-flex-item{
-            font-size: 15px;
+        .flex-nav-item:nth-child(2) {
+            text-decoration: underline;
         }
 
-        .project-flex-item div:first-child{
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            color: rgb(90, 90, 90);
+        }
+
+        .projects-container {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .title {
+            padding-top: 20px;
+            font-weight: bold;
+            top: 350px;
+            font-size: 40px;
+        }
+
+        .subtitle {
+            text-align: left;
+            top: 400px;
+        }
+
+        .project-flex-item {
             font-size: 17px;
+        }
+
+        .project-flex-item div:first-child {
+            font-size: 20px;
             font-weight: bold;
         }
 
-        .project-flex-item div:nth-child(2){
-            font-size: 13px;
-            font-style:italic;
+        .project-flex-item div:nth-child(2) {
+            font-size: 15px;
+            font-style: italic;
         }
 
         .project-flex-item ul {
-            padding-left: 20px;
+            padding-left: 30px;
             margin-top: 5px;
         }
-    }
 
-  </style>
+        @media(max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .header-title {
+                height: 150px;
+                background-size: cover;
+            }
+
+            #navbar {
+                gap: 40px;
+                height: 50px;
+            }
+
+            .flex-nav-item {
+                font-size: 10px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            .project-flex-item {
+                font-size: 15px;
+            }
+
+            .project-flex-item div:first-child {
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            .project-flex-item div:nth-child(2) {
+                font-size: 13px;
+                font-style: italic;
+            }
+
+            .project-flex-item ul {
+                padding-left: 20px;
+                margin-top: 5px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -176,7 +175,8 @@
     </header>
 
     <nav id="navbar">
-        <a class="flex-nav-item" href="../index.html">HOME</a><!--要改-->
+        <a class="flex-nav-item" href="../index.html">HOME</a>
+        <!--要改-->
         <a class="flex-nav-item" href="index.html">PROJECTS</a>
         <a class="flex-nav-item" href="../Contact/index.html">CONTACT</a>
         <a class="flex-nav-item" href="../Other/index.html">OTHER</a>
@@ -188,26 +188,36 @@
             <div class="project-flex-item">
                 <div>WorkerBee</div>
                 <div>Java, MySQL</div>
-                <div>A project to automatically find related jobs for users based on the customized background, which effectively
-                    reduce the unnecessary work for people to find jobs from a huge number of alternatives from the internet.</div>
+                <div>A project to automatically find related jobs for users based on the customized background, which
+                    effectively
+                    reduce the unnecessary work for people to find jobs from a huge number of alternatives from the
+                    internet.</div>
                 <ul>
-                    <li>Utilized JavaServer Pages to develop the project, helping users to find related jobs based on the customized
+                    <li>Utilized JavaServer Pages to develop the project, helping users to find related jobs based on
+                        the customized
                         background</li>
-                    <li>Made use of the Glassdoor dataset from world’s largest data science community Kaggle as the data of the project</li>
-                    <li>Deployed Google OAuth as the authentication and authorization module to ensure the security and the reliability</li>
-                    <li>Adopted MySQL as the database to store the information of the job details, background of the user, etc. to make
+                    <li>Made use of the Glassdoor dataset from world’s largest data science community Kaggle as the data
+                        of the project</li>
+                    <li>Deployed Google OAuth as the authentication and authorization module to ensure the security and
+                        the reliability</li>
+                    <li>Adopted MySQL as the database to store the information of the job details, background of the
+                        user, etc. to make
                         customized recommendation</li>
-                    <li>Followed DAO pattern in Object-Oriented-Design to integrate different components and increase code reusage</li>
+                    <li>Followed DAO pattern in Object-Oriented-Design to integrate different components and increase
+                        code reusage</li>
                 </ul>
             </div>
 
             <div class="project-flex-item">
                 <div>PetHome App</div>
                 <div>Kotlin, Android Studio</div>
-                <div>An Android mobile application that list information of all dog and cat breeds as well as adoptable pets on PetFinder website.</div>
+                <div>An Android mobile application that list information of all dog and cat breeds as well as adoptable
+                    pets on PetFinder website.</div>
                 <ul>
-                    <li>Developed an Android App that support user account creation, login, animal information retrieval, marking favorites, and adoption contact</li>
-                    <li>Incorporated a flexible UI by using constraint layouts, fragments and sliding gestures, enhancing user experience and providing better compatibility for different devices</li>
+                    <li>Developed an Android App that support user account creation, login, animal information
+                        retrieval, marking favorites, and adoption contact</li>
+                    <li>Incorporated a flexible UI by using constraint layouts, fragments and sliding gestures,
+                        enhancing user experience and providing better compatibility for different devices</li>
                     <li>Implemented user login interface using Firebase Authentication Module</li>
                     <li>Configured Google Firebase to store shelters info, animals info and users info</li>
                     <li>Integrated Google Map API to display the pinpoint location of shelters</li>
@@ -217,19 +227,24 @@
             <div class="project-flex-item">
                 <div>Mario Shooter Game</div>
                 <div>C#, Unity</div>
-                <div>An Unity shooter game based on Mario’s story. Mario use the power gain from mushroom power-ups to fight against Paragoomba.</div>
+                <div>An Unity shooter game based on Mario’s story. Mario use the power gain from mushroom power-ups to
+                    fight against Paragoomba.</div>
                 <ul>
                     <li>Developed a shooter game using Mario Game related assets</li>
-                    <li>Players gain extra power from mushroom including extra life and enhanced fireball, and lose a life by taking damage
-                        from enemy; A scoring system keeps track of the player’ progress and game ends when all three lives are taken</li>
+                    <li>Players gain extra power from mushroom including extra life and enhanced fireball, and lose a
+                        life by taking damage
+                        from enemy; A scoring system keeps track of the player’ progress and game ends when all three
+                        lives are taken</li>
                     <li>Built gaming environment including player bounds and user interface using Unity engine</li>
-                    <li>Implemented gaming function including player movement, power-ups spawning, score counting, and enemy collision
+                    <li>Implemented gaming function including player movement, power-ups spawning, score counting, and
+                        enemy collision
                         detection and destruction using C#</li>
                 </ul>
-            
+
             </div>
         </div>
     </div>
 
 </body>
+
 </html>

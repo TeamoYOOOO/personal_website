@@ -4,97 +4,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Mini Assignment 2</title>
+  <title>Other</title>
   <style>
-    body{
-      margin:0;
+    body {
+      margin: 0;
       font-family: Comic Sans MS, Comic Sans, cursive;
     }
 
-    .header-title{
-        height: 200px;
-        width: 100%;
-        background-image: url('../bg-pic.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        padding-top: 50px;
-        text-align: center;
+    .header-title {
+      height: 200px;
+      width: 100%;
+      background-image: url('../bg-pic.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      padding-top: 50px;
+      text-align: center;
     }
 
-    h1{
-        margin: 0;
-        font-size: 60px;
+    h1 {
+      margin: 0;
+      font-size: 60px;
     }
 
-    h2{
-        color: rgb(90, 90, 90);
-        font-weight: bold;
-        top: 350px;
-        font-size:35px;
-        margin-bottom: 0px;
-    }
-
-    h3{
-        margin-top: 10px;
-    }
-
-    #navbar{
-        border: 1px rgb(128, 128, 128, 0.5) solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
-        position: sticky;
-        top:0;
-        height: 70px;
-        background-color: white;
-    }
-
-    .flex-nav-item:hover{
-        text-decoration: underline;     
-    }
-
-    .flex-nav-item{
-        font-size: 15px;
-        color: gray;
-        text-decoration: none;
-    }
-
-    .flex-nav-item:nth-child(4){/*!!!!!*/
-        text-decoration: underline;
-    }
-
-    .content{
-        margin-left: 15%;
-        margin-right: 15%;
-        color: rgb(90, 90, 90); 
-    }
-
-    p{
-      margin-top:0px;
+    h2 {
+      color: rgb(90, 90, 90);
+      font-weight: bold;
+      top: 350px;
+      font-size: 35px;
       margin-bottom: 0px;
     }
 
-    #intro{
-      margin-top:20px; 
+    h3 {
+      margin-top: 10px;
+    }
+
+    #navbar {
+      border: 1px rgb(128, 128, 128, 0.5) solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      position: sticky;
+      top: 0;
+      height: 70px;
+      background-color: white;
+    }
+
+    .flex-nav-item:hover {
+      text-decoration: underline;
+    }
+
+    .flex-nav-item {
+      font-size: 15px;
+      color: gray;
+      text-decoration: none;
+    }
+
+    .flex-nav-item:nth-child(4) {
+      /*!!!!!*/
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 15%;
+      margin-right: 15%;
+      color: rgb(90, 90, 90);
+    }
+
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    #intro {
+      margin-top: 20px;
       font-size: 20px;
     }
 
-    .title{
+    .title {
       padding-top: 40px;
       font-weight: bold;
       top: 350px;
-      font-size:20px;
+      font-size: 20px;
       padding-bottom: 10px;
     }
 
     .grid-container {
       display: grid;
       height: 100%;
-      grid-template-areas: 
-          "pic-one pic-two"
-          "pic-three pic-four"
+      grid-template-areas:
+        "pic-one pic-two"
+        "pic-three pic-four"
       ;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -108,7 +109,7 @@
       grid-area: pic-one;
       display: flex;
       justify-content: space-around;
-      align-items: center ;
+      align-items: center;
     }
 
     .pic-two {
@@ -117,7 +118,7 @@
       grid-area: pic-two;
       display: flex;
       justify-content: space-around;
-      align-items: center ;
+      align-items: center;
     }
 
     .pic-three {
@@ -126,7 +127,7 @@
       grid-area: pic-three;
       display: flex;
       justify-content: space-around;
-      align-items: center ;
+      align-items: center;
     }
 
     .pic-four {
@@ -135,52 +136,52 @@
       grid-area: pic-four;
       display: flex;
       justify-content: space-around;
-      align-items: center ;
+      align-items: center;
     }
 
-    .flex-box{
+    .flex-box {
       display: flex;
       font-size: 30px;
     }
-    
-    .pic{
-      max-width: 80%; 
+
+    .pic {
+      max-width: 80%;
     }
 
-    .pic:hover{
+    .pic:hover {
       max-width: 90%;
       -webkit-transition: 0.5s;
     }
 
-    @media(max-width: 768px){
-      .flex-container{
+    @media(max-width: 768px) {
+      .flex-container {
         flex-direction: column;
       }
 
-      .header-title{
+      .header-title {
         height: 150px;
         background-size: cover;
       }
 
-      #navbar{
+      #navbar {
         gap: 40px;
         height: 50px;
       }
 
-      .flex-nav-item{
+      .flex-nav-item {
         font-size: 10px;
       }
 
-      h1{
+      h1 {
         font-size: 30px;
       }
 
-      h2{
+      h2 {
         font-weight: bold;
-        font-size:25px;
+        font-size: 25px;
       }
 
-      h3{
+      h3 {
         font-size: 15px;
       }
 
@@ -190,7 +191,7 @@
         margin-bottom: 20px;
       }
 
-      #intro{
+      #intro {
         font-size: 15px;
       }
     }
@@ -200,25 +201,27 @@
 <body>
   <header>
     <div class="header-title">
-        <h1>Ying Zeng</h1>
-        <h3>
-            This is the personal website of Ying Zeng
-        </h3>
+      <h1>Ying Zeng</h1>
+      <h3>
+        This is the personal website of Ying Zeng
+      </h3>
     </div>
   </header>
 
   <nav id="navbar">
-      <a class="flex-nav-item" href="../index.html">HOME</a>
-      <a class="flex-nav-item" href="../Projects/index.html">PROJECTS</a>
-      <a class="flex-nav-item" href="../Contact/index.html">CONTACT</a>
-      <a class="flex-nav-item" href="index.html">OTHER</a>
+    <a class="flex-nav-item" href="../index.html">HOME</a>
+    <a class="flex-nav-item" href="../Projects/index.html">PROJECTS</a>
+    <a class="flex-nav-item" href="../Contact/index.html">CONTACT</a>
+    <a class="flex-nav-item" href="index.html">OTHER</a>
   </nav>
 
   <div class="content">
-    <div id="intro">I love animals. For this page, I would like to share some pictures of me and myfriend's cutty pets.</div>
+    <div id="intro">I love animals. For this page, I would like to share some pictures of me and myfriend's cutty pets.
+    </div>
     <div class="title">My dog - Bobo</div>
     <p>
-      I have a dog named Bobo. He is a 4 year old <span style="font-weight: bold;">Boston Terrier</span>. He is shy but always enegetic.
+      I have a dog named Bobo. He is a 4 year old <span style="font-weight: bold;">Boston Terrier</span>. He is shy but
+      always enegetic.
     </p>
     <div class="grid-container">
       <div class="pic-one">
@@ -236,7 +239,8 @@
     </div>
 
     <div class="title">My friend's cat - Toby</div>
-    <p>My friend has a cat named Toby. He is a 2 year old <span style="font-weight: bold;">Ragdoll</span>. He is super naughty.</p>
+    <p>My friend has a cat named Toby. He is a 2 year old <span style="font-weight: bold;">Ragdoll</span>. He is super
+      naughty.</p>
     <div class="grid-container">
       <div class="pic-one">
         <img class="pic" src="toby1.jpeg" alt="picture of toby">
@@ -253,7 +257,9 @@
     </div>
 
     <div class="title"> Bobo & Toby & Huahua</div>
-    <p>Bobo and Toby used to live together. During that time, one of my friend had her cat stayed at my home for few months because she was not able to go back to US due to the flight restriction by covid. I have plenty of photoes taken during that time.</p>
+    <p>Bobo and Toby used to live together. During that time, one of my friend had her cat stayed at my home for few
+      months because she was not able to go back to US due to the flight restriction by covid. I have plenty of photoes
+      taken during that time.</p>
     <div class="grid-container">
       <div class="pic-one">
         <img class="pic" src="bth1.jpg" alt="picture of Toby, Bobo and Huahua">
@@ -270,7 +276,8 @@
     </div>
 
     <div class="title">My friend's cat - Tutu</div>
-    <p>This is Tutu. She is a 3 year old <span style="font-weight: bold;">Siamese cat</span>. She lives in China and I have not meet her once yet. Really wish the pandemic is over so I can go back to China to see her. </p>
+    <p>This is Tutu. She is a 3 year old <span style="font-weight: bold;">Siamese cat</span>. She lives in China and I
+      have not meet her once yet. Really wish the pandemic is over so I can go back to China to see her. </p>
     <div class="grid-container">
       <div class="pic-one">
         <img class="pic" src="tutu1.jpeg" alt="picture of tutu">
@@ -279,7 +286,7 @@
         <img class="pic" src="tutu4.jpeg" alt="picture of tutu">
       </div>
       <div class="pic-three">
-        <img class="pic" src="tutu3.jpeg" alt="picture of tutu"> 
+        <img class="pic" src="tutu3.jpeg" alt="picture of tutu">
       </div>
       <div class="pic-four">
         <img class="pic" src="tutu2.jpeg" alt="picture of tutu">
@@ -287,7 +294,8 @@
     </div>
 
     <div class="title">My friend's cat - Coco & Gungun</div>
-    <p>This is Coco & Gungun. Both of them are <span style="font-weight: bold;">Domestic Short Hair</span>. They live together.</p>
+    <p>This is Coco & Gungun. Both of them are <span style="font-weight: bold;">Domestic Short Hair</span>. They live
+      together.</p>
     <div class="grid-container">
       <div class="pic-one">
         <img class="pic" src="cogun1.jpg" alt="picture of Gungun">
@@ -308,8 +316,9 @@
 
 
 
-</div>
+  </div>
 
 
 </body>
+
 </html>

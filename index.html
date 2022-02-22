@@ -2,165 +2,166 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Mini Assignment 2</title>
-  <style>
-    body{
-      margin:0;
-      font-family: Comic Sans MS, Comic Sans, cursive;
-    }
-    
-    .header-title{
-        height: 200px;
-        width: 100%;
-        background-image: url('bg-pic.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        padding-top: 50px;
-        text-align: center;
-    }
-
-    h1{
-        margin: 0;
-        font-size: 60px;
-    }
-
-    h2{
-        color: rgb(90, 90, 90);
-        font-weight: bold;
-        top: 350px;
-        font-size:35px;
-        margin-bottom: 0px;
-    }
-
-    h3{
-        margin-top: 10px;
-    }
-
-    #navbar{
-        border: 1px rgb(128, 128, 128, 0.5) solid;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
-        position: sticky;
-        top:0;
-        height: 70px;
-        background-color: white;
-    }
-
-    .flex-nav-item:hover{
-        text-decoration: underline;     
-    }
-
-    .flex-nav-item{
-        font-size: 15px;
-        text-decoration: none;
-        color: rgb(90, 90, 90);
-    }
-
-    .flex-nav-item:nth-child(1){
-        text-decoration: underline;
-    }
-
-    .education-container{
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
-    }
-
-    .content{
-        margin-left: 15%;
-        margin-right: 15%;
-        color: rgb(90, 90, 90);
-    }
-
-    .flex-container{
-        display: flex;
-    }
-
-    #myself{
-        float: right; 
-        max-width: 300px; 
-        height: 200px;
-    }
-
-    .subtitle{
-        text-align: left;
-        top: 400px;
-    }
-
-    .education-container .education-flex-item div{
-        font-size: 17px;
-    }
-    .education-container .education-flex-item div:first-child{
-        font-weight: bold;
-    }
-    .intro{
-        font-size: 17px;
-    }
-
-    .content ul {
-        font-size: 17px;
-        padding-left: 30px;
-    }
-
-    .content ul>li:first-child{  
-        font-weight: bold;
-    }
-
-    @media(max-width: 768px){
-        .flex-container{
-            flex-direction: column;
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Projects</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Comic Sans MS, Comic Sans, cursive;
         }
 
-        .header-title{
-            height: 150px;
+        .header-title {
+            height: 200px;
+            width: 100%;
+            background-image: url('bg-pic.jpeg');
+            background-repeat: no-repeat;
             background-size: cover;
+            color: white;
+            padding-top: 50px;
+            text-align: center;
         }
 
-        #navbar{
-            gap: 40px;
-            height: 50px;
+        h1 {
+            margin: 0;
+            font-size: 60px;
         }
 
-        .flex-nav-item{
-            font-size: 10px;
-        }
-
-        h1{
-            font-size: 30px;
-        }
-
-        h2{
+        h2 {
+            color: rgb(90, 90, 90);
             font-weight: bold;
-            font-size:25px;
+            top: 350px;
+            font-size: 35px;
+            margin-bottom: 0px;
         }
 
-        h3{
+        h3 {
+            margin-top: 10px;
+        }
+
+        #navbar {
+            border: 1px rgb(128, 128, 128, 0.5) solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            position: sticky;
+            top: 0;
+            height: 70px;
+            background-color: white;
+        }
+
+        .flex-nav-item:hover {
+            text-decoration: underline;
+        }
+
+        .flex-nav-item {
             font-size: 15px;
+            text-decoration: none;
+            color: rgb(90, 90, 90);
         }
 
-        .intro{
-            font-size: 13px;
+        .flex-nav-item:nth-child(1) {
+            text-decoration: underline;
         }
 
-        .education-container .education-flex-item div{
-            font-size: 15px;
+        .education-container {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
         }
 
-        .content ul{
-            font-size: 15px;
-            padding-left: 20px;
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            color: rgb(90, 90, 90);
         }
 
-    }
+        .flex-container {
+            display: flex;
+        }
 
-  </style>
+        #myself {
+            float: right;
+            max-width: 300px;
+            height: 200px;
+        }
+
+        .subtitle {
+            text-align: left;
+            top: 400px;
+        }
+
+        .education-container .education-flex-item div {
+            font-size: 17px;
+        }
+
+        .education-container .education-flex-item div:first-child {
+            font-weight: bold;
+        }
+
+        .intro {
+            font-size: 17px;
+        }
+
+        .content ul {
+            font-size: 17px;
+            padding-left: 30px;
+        }
+
+        .content ul>li:first-child {
+            font-weight: bold;
+        }
+
+        @media(max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .header-title {
+                height: 150px;
+                background-size: cover;
+            }
+
+            #navbar {
+                gap: 40px;
+                height: 50px;
+            }
+
+            .flex-nav-item {
+                font-size: 10px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            .intro {
+                font-size: 13px;
+            }
+
+            .education-container .education-flex-item div {
+                font-size: 15px;
+            }
+
+            .content ul {
+                font-size: 15px;
+                padding-left: 20px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -184,8 +185,12 @@
         <h2>About me</h2>
         <div class="flex-container">
             <p class="intro">
-                My name is Ying Zeng. I am currently a student at Northeastern University major in computer science. I am from Shenzhen, southern China. I studied accounting in college and now have made a transition to computer science. I will be interned at Amazom this summer and I am seeking for internship for Fall 2022.I will be graduating next summer and plan to do two interns before graduation.
-                <br> The picture on the right is a photo of me and my friend (me on the left). It was taken at Griffith Observatory where you can see view of the whole city and a huge Hollywood sign.
+                My name is Ying Zeng. I am currently a student at Northeastern University major in computer science. I
+                am from Shenzhen, southern China. I studied accounting in college and now have made a transition to
+                computer science. I will be interned at Amazom this summer and I am seeking for internship for Fall
+                2022.I will be graduating next summer and plan to do two interns before graduation.
+                <br> The picture on the right is a photo of me and my friend (me on the left). It was taken at Griffith
+                Observatory where you can see view of the whole city and a huge Hollywood sign.
             </p>
             <img id="myself" src="myself.jpg" alt="pic-of-me">
         </div>
@@ -208,14 +213,14 @@
 
             <div class="education-flex-item">
                 <div>Miami University</div>
-                <div>Major: Accountancy</div>   
+                <div>Major: Accountancy</div>
                 <div>GPA: 3.61</div>
                 <div>2015-2019</div>
             </div>
 
             <div class="education-flex-item">
                 <div>Fontbonne Academy</div>
-                <div>High School</div>   
+                <div>High School</div>
                 <div>2012-2015</div>
             </div>
         </div>
@@ -236,4 +241,5 @@
 
 
 </body>
+
 </html>
